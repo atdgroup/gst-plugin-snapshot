@@ -1,5 +1,5 @@
 # gst-plugin-snapshot
-GStreamer 1.0 element that can save a single frame as a snapshot image from a video stream.
+GStreamer 1.0 element that can save a single frame as a snapshot image from a video stream. This element will can be insterted into a pipeline and it will just pass the video frames on until it's trigger property is set to true. Then it will save a frame and then go back to just passing the video on. It is different from using filesink because it does not terminate the stream, and it can be used to pick off individual frames from a live feed in a simple manner without using a tee.
 
 Properties:
 
