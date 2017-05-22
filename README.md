@@ -2,10 +2,15 @@
 GStreamer 1.0 element that can save a single frame as a snapshot image from a video stream.
 
 Properties:
+
   trigger             : If true the next frame after the frame delay, is written to an image file.
+  
   framedelay          : The delay in frames from the trigger to the image save.
+  
   filetype            : Specify the file type ("bmp", "png" or "jpeg").
+  
   location            : Specify the file path and filename to write to.
+  
 
 ----------
 First run autogen.sh
