@@ -23,8 +23,8 @@ use:
 $ export GST_PLUGIN_PATH=/usr/local/lib/gstreamer-1.0
 
 
-measurefilter pipelines
---------------------
+pipelines
+---------
 Working:
 gst-launch-1.0 videotestsrc num-buffers=20 ! snapshotfilter trigger=true framedelay=15 filetype="jpeg" location="image.jpg" ! videoconvert ! xvimagesink
 
